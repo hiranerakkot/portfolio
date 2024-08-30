@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="header">
+        <div class="container" id="myHeader">
+
+            <!--Top of the website-->
+
+            <nav>
+                <img src="images/01.jpg" class="logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+            <!-- Middle Part-->
+<div class="content">
+            <div class="header-txt">
+                <h1>I'm <span>Hiran Erakkot</span></h1>
+                <p>Cyber Security Analyst
+                </p>
+
+                <!-- SOCIAL MEDIA BUTTON -->
+
+                <div class="social-buttons">
+                    <a href="#" class="social-button social-button--stack-overflow" aria-label="Stackoverflow">
+                        <i class="fa fa-stack-overflow"></i>
+                        <a href="#" class="social-button social-button--gmail" aria-label="Gmail">
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                        <a href="https://in.linkedin.com/in/hiranerakkot" class="social-button social-button--linkedin"
+                            aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/hiranerakkot" class="social-button social-button--github"
+                            aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" class="social-button social-button--whatsapp" aria-label="Whatsapp">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+
+                        <!-- DOWNLOAD CV BUTTON -->
+
+                        <button class="button" style="vertical-align:middle"><a
+                                href="resources/Hiran E Resume.pdf"><span>Download Resume</span></a></button>
+                </div>
+            </div>
+            <!-- IMAGE SECTION -->
+            <div class="imge">
+                <img src="images/01.jpg" class="imgone">
+            </div>
+
+        </div>
+    </div>
+
+    <!-- ABOUT SECTION -->
+    <div class="aboutpart" id="about">
+        <h1>Let you know about me!</h1>
+        <p>I am Hiran E, currently pursuing a Bachelor of Computer Applications (BCA) at St. Xavier's Arts and Science
+            College, affiliated with Calicut University. My academic journey has fueled my passion for cybersecurity,
+            driving me to explore and learn more about protecting digital environments.I am dedicated, diligent, and
+            constantly seeking to enhance my skills in this ever-evolving field. I have honed my cybersecurity knowledge
+            through various courses from Cisco and EC-Council, as well as other courses from Udemy. Additionally, I have
+            gained practical experience and insights from platforms like TryHackMe and YouTube, enabling me to stay
+            updated with the latest trends and techniques in cybersecurity.</p>
+    </div>
+    <!-- ABOUT-CARDS SECTION -->
+    <div class="cards">
+        <div class="educertpro"><img src="images/20240725_142711_0000.png" alt="" class="imgtwo">
+            <div class="info">
+                <h1>Education</h1>
+                <p>Bachelor of Computer Applications (BCA) <br>
+                    At St.Xavier's Arts and Science College <br>
+                    Affliated By Calicut University
+                </p><button>Read More</button>
+            </div>
+        </div>
+        <div class="educertpro"><img src="images/20240725_142711_0002.png" alt="" class="imgtwo">
+            <div class="info">
+                <h1>Certifications</h1>
+                <p></p><button>Read More</button>
+            </div>
+        </div>
+        <div class="educertpro"><img src="images/20240725_142711_0001.png" alt="" class="imgtwo">
+            <div class="info">
+                <h1>Projects</h1>
+                <p>More Details will be swapped in Details Section</p>
+                <button>Read More</button>
+            </div>
+        </div>   
+    </div>
+    <!-- SKILLS SECTION -->
+     <div class="experience" id="skills">
+            <h1>Hands-On Skills(Experience)</h1>
+            <p>I am Hiran E, currently pursuing a Bachelor of Computer Applications (BCA) at St. Xavier's Arts and Science
+                College, affiliated with Calicut University. My academic journey has fueled my passion for cybersecurity,
+                driving me to explore and learn more about protecting digital environments.I am dedicated, diligent, and
+                constantly seeking to enhance my skills in this ever-evolving field. I have honed my cybersecurity knowledge
+                through various courses from Cisco and EC-Council, as well as other courses from Udemy. Additionally, I have
+                gained practical experience and insights from platforms like TryHackMe and YouTube, enabling me to stay
+                updated with the latest trends and techniques in cybersecurity.</p>
+        </div></div>
+    <!-- Contact Form&Info -->
+
+        <!-- FOOTER -->
+        <footer>
+            <div class="footerr">  
+                    <form action="">
+                        <label for="fname">Name</label>
+                        <input type="text" id="name" name="name" value="Name" class="box"><br>
+                        <label for="lname">Email</label>
+                         <input type="email" name="email" id="email" class="box"><br>
+                         <label for="">Message</label>
+                         <input type="message" class="box">
+                         <input type="submit" value="Submit" class="subbmit">
+                        
+                    </form>
+            </div>
+            <div class="copyright">
+                Copyright &#169; 2024 | Hiran Erakkot  All rights reserved
+            </div>
+        </footer>    
+    <script src="https://kit.fontawesome.com/45b385446f.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+  <!-- fun -->
+  <script>
+    window.onscroll = function() {myFunction()};
+    
+    var header = document.getElementById("myHeader");
+    var sticky = header.offsetTop;
+    
+    function myFunction() {
+      if (window.pageYOffset > sticky) {
+        header.classList.add("sticky");
+      } else {
+        header.classList.remove("sticky");
+      }
+    }
+    </script>
+</body>
+
+</html>
